@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="de51545f-5ba9-48b0-b371-3d5136d3ad8d" ChangeDateTime="07/10/2019 08:03:56">
+    <Property Name="ElementName" Value="[dbo].[inventory].[qunatity]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[inventory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="quantity" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="98bd6e73-d086-411a-b7ee-4edcb0c5ac74" ChangeDateTime="07/10/2019 08:06:39">
+    <Property Name="ElementName" Value="[dbo].[receiving].[part_number]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[receiving]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="part_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8fab0c20-2cfe-4db2-baa2-8d50fcf94acb" ChangeDateTime="07/10/2019 08:10:41">
+    <Property Name="ElementName" Value="[dbo].[receiving].[received_date]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[receiving]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="transaction_date" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b33ae5bf-58a6-4408-8cd0-8b16d41b5df6" ChangeDateTime="07/10/2019 08:10:50">
+    <Property Name="ElementName" Value="[dbo].[receiving].[invoice_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[receiving]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="transaction_id" />
+  </Operation>
+</Operations>
