@@ -13,16 +13,35 @@ namespace TinyWarehouse.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Inventory()
         {
-            ViewBag.Message = "Your application description page.";
+            return View();
+        }
+
+        public ActionResult Receiving()
+        {
+            ViewBag.Message = "T B D";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Shipping()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "T B D";
+
+            return View();
+        }
+
+        public ActionResult Statistics()
+        {
+            ViewBag.Message = "T B D";
+
+            return View();
+        }
+
+        public ActionResult Parts()
+        {
+            ViewBag.Message = "T B D";
 
             return View();
         }

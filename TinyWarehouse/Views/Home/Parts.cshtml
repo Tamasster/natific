@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Parts";
+}
+
+<div class="jumbotron" data-bind="visible: loading">
+    <h1>Loading...</h1>
+</div>
+
+<table data-bind="visible: loading() == false" class="table">
+    <thead>
+        <tr><th>Part Number</th><th>Name</th><th>Description</th><th>Price</th><th>Weight</th></tr>
+    </thead>
+    <tbody data-bind="foreach: parts">
+        <tr>
+            <td data-bind="text: PartNumber"></td>
+            <td data-bind="text: Name"></td>
+            <td data-bind="text: Description"></td>
+            <td data-bind="text: Price"></td>
+            <td data-bind="text: Weight"></td>
+        </tr>
+    </tbody>
+</table>
+
+@Scripts.Render("~/bundles/parts")
+

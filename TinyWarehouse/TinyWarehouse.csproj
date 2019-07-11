@@ -146,6 +146,8 @@
     <Compile Include="Models\part.cs">
       <DependentUpon>TinyWarehouseDataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PartDto.cs" />
+    <Compile Include="Models\StatisticsDto.cs" />
     <Compile Include="Models\TinyWarehouseDataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -186,6 +188,9 @@
       <DependentUpon>TinyWarehouseDataModel.edmx</DependentUpon>
       <LastGenOutput>TinyWarehouseDataModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\app\parts.js" />
+    <Content Include="Scripts\app\receivingShipping.js" />
+    <Content Include="Scripts\app\statistics.js" />
     <Content Include="Scripts\app\tools.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -221,13 +226,15 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Shipping.cshtml" />
+    <Content Include="Views\Home\Statistics.cshtml" />
+    <Content Include="Views\Home\Inventory.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Receiving.cshtml" />
+    <Content Include="Views\Home\Parts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Inventory\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

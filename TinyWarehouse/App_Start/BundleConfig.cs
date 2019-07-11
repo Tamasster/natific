@@ -29,8 +29,14 @@ namespace TinyWarehouse
             bundles.Add(new ScriptBundle("~/bundles/inventory").Include(
                     "~/Scripts/app/inventory.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/parts").Include(
+                    "~/Scripts/app/parts.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/statistics").Include(
+                    "~/Scripts/app/statistics.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                "~/Scripts/app/datatModel.js",
+                "~/Scripts/app/dataModel.js",
                 "~/Scripts/app/repositories.js",
                 "~/Scripts/app/tools.js"));
         }

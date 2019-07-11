@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Inventory";
+}
+
+
+
+<div class="row">
+
+    <div class="jumbotron" data-bind="visible: inventoryLoading">
+        <h1>Loading...</h1>
+    </div>
+
+    <table data-bind="visible: inventoryLoading() == false" class="table">
+        <thead>
+            <tr><th>Part Number</th><th>Name</th><th>Description</th><th>Price</th><th>Weight</th><th>Quantity</th></tr>
+        </thead>
+        <tbody data-bind="foreach: inventory">
+            <tr>
+                <td data-bind="text: PartNumber"></td>
+                <td data-bind="text: Name"></td>
+                <td data-bind="text: Description"></td>
+                <td data-bind="text: Price"></td>
+                <td data-bind="text: Weight"></td>
+                <td data-bind="text: Quantity"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+@Scripts.Render("~/bundles/inventory")
